@@ -1,0 +1,112 @@
+MDFloatLayout:
+    md_bg_color: 240/255.0, 236/255.0, 235/255.0, 1
+    MDGridLayout:
+        size_hint: 0.5, 0.5
+        pos_hint: { 'center_x': 0.5, 'center_y':0.7 }
+        cols: 3
+        rows: 3
+
+        Button:
+            id: btn1
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn1)
+        Button:
+            id: btn2
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn2)
+        Button:
+            id: btn3
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn3)
+        Button:
+            id: btn4
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn4)
+        Button:
+            id: btn5
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn5)
+        Button:
+            id: btn6
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn6)
+        Button:
+            id: btn7
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn7)
+        Button:
+            id: btn8
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn8)
+        Button:
+            id: btn9
+            font_size: "32sp"
+            disabled_color: 0,0,1,1
+            size_hint: (0.3,0.3)
+            text: ""
+            on_release: app.presser(btn9)
+
+    MDCard:
+        pos_hint: {"center_x": 0.5, "center_y":0.37}
+        size_hint: (0.9,0.1)
+        padding: 25
+        spacing: 25
+        elevation: 15
+        MDLabel:
+            id: instruct
+            halign: "center"
+            text: "X Goes First!"
+            font_size: "32sp"
+            #pos_hint: {"center_y":0.35}
+    
+    MDRaisedButton:
+        id: restart
+        text: "Next Round"
+        md_bg_color: 238/255.0, 50/255.0, 51/255.0, 1
+        font_size: "24sp"
+        halign: "center"
+        elevation: 15
+        pos_hint: {"center_x":0.5, "center_y":0.25}
+        on_press: app.restart()
+    
+    MDRaisedButton:
+        id: new_match_btn
+        text: "New Match"
+        font_size: "24sp"
+        halign: "center"
+        elevation: 15
+        pos_hint: {"center_x":0.5, "center_y":0.15}
+        on_press: app.new_match()
+
+    MDLabel:
+        id: score
+        font_size: "20sp"
+        text: "X Wins: 0    |   O Wins: 0"
+        halign: "center"
+        size_hint: (0.9, 0.07)
+        md_bg_color: 108/255.0, 116/255.0, 118/255.0, 1
+        pos_hint: {"center_x": 0.5, "center_y": 0.05}
